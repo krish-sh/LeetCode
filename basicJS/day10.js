@@ -62,3 +62,17 @@ if (number >= 1 && number < 2) {
 
   console.log("1 coin are:", notes, "and extra notes are:", extra);
 }
+
+let x = Math.round((0.1 + 0.2) * 10) / 10
+
+switch (x) {
+  case 0.3:
+    console.log(x);
+
+    break;
+
+  default:
+    console.log("Error");
+    
+    break;
+}
