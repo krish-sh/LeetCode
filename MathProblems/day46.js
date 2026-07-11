@@ -17,13 +17,19 @@
 let x = 2.00000
 let n = 10
 
-    if( n === 0) return 1
-    let ans = temp(x,n)
-    return (n < 0)? 1/ans : ans
+let ans = 1
+let power = Math.abs(n)
 
-    function p(x,n){
-        if(n === 0) return 1
-        let ans =  p(x, parseInt(n/2)) 
-        if(n % 2 === 0) return ans * ans
-        else return ans * ans * x
+while(power > 0){
+    if(power % 2 === 1){
+        ans *= x
     }
+    x *= x
+
+    power = Math.floor(power/ 2)
+}
+
+if (n  < 0 ) ans = 1/ans
+console.log(ans);
+
+    
