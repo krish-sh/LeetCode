@@ -18,3 +18,18 @@
 //   }
 // }
 // console.log(nums.length);
+
+// With Sum formula
+
+let nums = [3, 0, 1];
+
+let n = nums.length;
+let expectedNumber = (n * (n + 1)) / 2;
+let actualTotal = 0;
+
+for (let i = 0; i < nums.length; i++) {
+  actualTotal += nums[i];
+}
+
+let missingNumber = expectedNumber - actualTotal;
+console.log(missingNumber);
