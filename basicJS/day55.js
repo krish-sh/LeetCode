@@ -1,4 +1,4 @@
-// Count element grater than pervious Average
+// Count element greater than pervious Average
 
 nums = [100, 200, 150, 300]
 
