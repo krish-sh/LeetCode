@@ -65,9 +65,9 @@ for (let i = 0; i < no; i++) {
   for (let m = 0; m <= i; m++) {
     // process.stdout.write("* ");
   }
-//   console.log("");
+  //   console.log("");
 }
-for (let i = 0; i < no -1; i++) {
+for (let i = 0; i < no - 1; i++) {
   for (let j = 0; j < no - i - 1; j++) {
     // process.stdout.write("* ");
   }
@@ -80,7 +80,7 @@ for (let i = 0; i < no -1; i++) {
   for (let m = 0; m < no - i - 1; m++) {
     // process.stdout.write("* ");
   }
-//   console.log("");
+  //   console.log("");
 }
 
 // * * * *
@@ -88,15 +88,40 @@ for (let i = 0; i < no -1; i++) {
 // *     *
 // * * * *
 
-let n = 4
+let n = 4;
 
-for(let i = 1; i <=n; i++){
-    for(let j = 1; j <= n ; j++){
-        if(i === 1 || i === n || j === 1 || j === n ){
-            // process.stdout.write("* ")
-        }else{
-            // process.stdout.write("  ");
-        }
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n; j++) {
+    if (i === 1 || i === n || j === 1 || j === n) {
+      // process.stdout.write("* ")
+    } else {
+      // process.stdout.write("  ");
     }
-    // console.log(" ");
+  }
+  // console.log(" ");
 }
+
+
+//  4 4 4 4 4 4 4  
+//  4 3 3 3 3 3 4  
+//  4 3 2 2 2 3 4
+//  4 3 2 1 2 3 4
+//  4 3 2 2 2 3 4
+//  4 4 4 4 4 4 4
+
+let N = 4;
+
+for(let i = 0; i < 2 * N - 1 ; i++){
+    for(let j = 0; j < 2 * N - 1; j++){
+       let top = i;
+       let bottom = (2*N -2) - i
+       let left = j
+       let right = (2 * N - 2)- j;
+
+       process.stdout.write(N - Math.min(top, bottom, left, right) + " ")
+    }
+    console.log(" ");
+    
+}
+
+
