@@ -71,13 +71,18 @@
 // function factorial(n, value){
 //     if(n === 1) return value
 //     value *= n
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> LeetCode
 //     return factorial(n-1, value)
 // }
 // console.log(factorial(5, 1));
 
 // reverse the array
 
+<<<<<<< HEAD
 let arr = [1,2,3,4,5,3]
 
 function reverse(arr,i, j){
@@ -100,3 +105,29 @@ console.log(reverse(arr, 0, arr.length - 1));
 console.log(reverse(arr, 0, arr.length - 1));
 
 
+=======
+// let arr = [1, 2, 3, 4, 5, 3];
+
+// function reverse(arr, i, j) {
+//   if (i >= j) return arr;
+//   let temp = arr[i];
+//   arr[i] = arr[j];
+//   arr[j] = temp;
+//   return reverse(arr, i + 1, j - 1);
+// }
+
+// console.log(reverse(arr, 0, arr.length - 1));
+
+
+// fibinacco sequence
+
+function fib( n){
+    if (n <= 1) return n
+    let last = fib(n-1)
+    let slast = fib(n-2)
+
+    return last + slast
+}
+
+console.log(fib(5));
+>>>>>>> LeetCode
