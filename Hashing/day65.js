@@ -28,13 +28,25 @@
 
 //Hash using map
 
-let arr = [1,2,3,6,3,3,2,6]
+// let arr = [1,2,3,6,3,3,2,6]
 
+// let map = new Map()
+
+// for(let i = 0; i < arr.length; i++){
+//     map.set(arr[i], (map.get(arr[i]) || 0) +1)
+// }
+// console.log(map);
+
+// Hash map in char
+
+let char = ["a", "b", "c", "a", "c"]
 let map = new Map()
 
-for(let i = 0; i < arr.length; i++){
-    map.set(arr[i], (map.get(arr[i]) || 0) +1)
+for(let i = 0; i<char.length;i++){
+    map = map.set(char[i], (map.get(char[i]) || 0) +1)
 }
 console.log(map);
+
+
 
 
